@@ -13,6 +13,11 @@ import { CartStatusComponent } from './components/cart-status/cart-status.compon
 import { CartDetailsComponent } from './components/cart-details/cart-details.component';
 import { CheckoutComponent } from './components/checkout/checkout.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { CustomerComponent } from './common/customer/customer.component';
+import { OrderComponent } from './common/order/order.component';
+import { OrderItemComponent } from './common/order-item/order-item.component';
+import { AddressComponent } from './common/address/address.component';
+import { PurchaseComponent } from './common/purchase/purchase.component';
 
 const routes: Routes=[
 {path:'cart-details',component:CartDetailsComponent},
@@ -35,7 +40,12 @@ const routes: Routes=[
     ProductDetailsComponent,
     CartStatusComponent,
     CartDetailsComponent,
-    CheckoutComponent
+    CheckoutComponent,
+    CustomerComponent,
+    OrderComponent,
+    OrderItemComponent,
+    AddressComponent,
+    PurchaseComponent
   ],
   imports: [
     RouterModule.forRoot(routes),
